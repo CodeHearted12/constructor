@@ -29,13 +29,17 @@ let atticus = new Dog('normal', 'grey', true)
 // /_/ /_/\__,_/_/ /_/ /_/\__,_/_/ /_/____/
 
 // Human Constructor & Prototype
-function Human (cool, feed pet) {
-  this.cool = cool
-  this.feed = function (dog) {
-    return dog.status = 'happy'
-  }
+function Human (cool) {
+  this.cool = cool;
+
+}
+Human.prototype.feed = function (dog) {
+  return dog.status = 'false';
 }
 
+Human.prototype.pet = function (dog) {
+  return dog.status = 'happy';
+}
 // Instances of Human
 // Needed: mason, julia
 
