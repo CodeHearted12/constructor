@@ -17,7 +17,7 @@ function Dog (status, color, hungry, owner) {
 // Instances of Dog
 // Needed: sadie, moonshine, atticus
 
-let sadie = new Dog('normal', 'brown', false)
+let sadie = new Dog('normal', 'black', false)
 let moonshine = new Dog('normal', 'brown', true)
 let atticus = new Dog('normal', 'grey', true)
 
@@ -34,7 +34,7 @@ function Human (cool) {
 
 }
 Human.prototype.feed = function (dog) {
-  return dog.status = 'false';
+  return dog.hungry = 'false';
 }
 
 Human.prototype.pet = function (dog) {
